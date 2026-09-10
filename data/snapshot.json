@@ -13,8 +13,16 @@
     "market_value": 5797362962.17,
     "rolling_20d_net_invested": 2297559594.7400002,
     "inventory_net_cost": 4455984752.804172,
-    "inventory_profit": 1341378209.3658285,
-    "inventory_return": 0.30102845583609616
+    "inventory_profit": 1341378209.3658288,
+    "inventory_return": 0.3010284558360962
+  },
+  "behavior_profile": {
+    "closed_signals": 106,
+    "win_rate": 0.42452830188679247,
+    "mean_return": 0.11799732616509565,
+    "median_return": -0.06192157213712485,
+    "median_hold_days": 148.0,
+    "winner_median_hold_days": 158.0
   },
   "core_stocks": [
     {
@@ -213,8 +221,8 @@
       "rolling_net": 27655118.700000003,
       "capital_retention": 0.3982994959,
       "commitment_ratio": 6.3120885818,
-      "inventory_net_cost": 56504103.44334498,
-      "inventory_profit": 30958773.05665502,
+      "inventory_net_cost": 56504103.44334501,
+      "inventory_profit": 30958773.05665499,
       "inventory_return": 0.5479030932,
       "net_amount_1": -3166440.0,
       "net_amount_5": 25890087.700000003,
@@ -529,7 +537,7 @@
       "inventory_profit": 15660209.183495104,
       "inventory_return": 0.3299886316,
       "net_amount_1": -219000.0,
-      "net_amount_5": 789212.0999999996,
+      "net_amount_5": 789212.1000000001,
       "net_amount_10": -8528028.200000001,
       "net_amount_20": 10415576.899999999,
       "net_vol_1": -3000.0,
@@ -1305,11 +1313,11 @@
       {
         "stock_id": "5297",
         "stock_name": "廣化",
-        "buy_amount": 10573878.200000001,
+        "buy_amount": 10573878.2,
         "sell_amount": 21609057.0,
         "buy_vol": 130803.0,
         "sell_vol": 268788.0,
-        "net_amount": -11035178.799999999,
+        "net_amount": -11035178.8,
         "net_vol": -137985.0
       },
       {

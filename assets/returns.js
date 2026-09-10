@@ -11,6 +11,13 @@ fetch("./data/snapshot.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{
       grid.insertAdjacentHTML("beforeend",`<span data-stock-return><small>庫存報酬</small><b class="${Number(row.inventory_return)>=0?"up":"down"}">${formatPct(row.inventory_return)}</b></span><span><small>未實現損益</small><b class="${Number(row.inventory_profit)>=0?"up":"down"}">${formatMoney(row.inventory_profit)}</b></span>`);
     });
   }
+  const profile=data.behavior_profile||{};
+  const profilePct=value=>value==null?"—":`${Number(value)>=0?"+":""}${(Number(value)*100).toFixed(2)}%`;
+  document.querySelector("#logic-samples").textContent=`${profile.closed_signals||0} 筆已結案訊號`;
+  document.querySelector("#logic-win-rate").textContent=profilePct(profile.win_rate).replace("+","");
+  document.querySelector("#logic-mean-return").textContent=`平均報酬 ${profilePct(profile.mean_return)}`;
+  document.querySelector("#logic-hold").textContent=`${Math.round(profile.median_hold_days||0)} 天`;
+  document.querySelector("#logic-winner-hold").textContent=`贏家中位 ${Math.round(profile.winner_median_hold_days||0)} 天`;
   new MutationObserver(renderReturns).observe(document.querySelector("#core-list"),{childList:true});
   new MutationObserver(renderReturns).observe(document.querySelector("#summary"),{childList:true});
   renderReturns();
