@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07131f">
+  <meta name="description" content="凱基台北 9268 分點核心持股、每日與多週期買賣及加減碼追蹤">
+  <title>凱基台北 9268｜分點資金雷達</title>
+  <link rel="stylesheet" href="./assets/app.css">
+  <link rel="stylesheet" href="./assets/logic.css">
+  <style>
+    .logic-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}.logic-metrics article{background:#091824;border:1px solid #173044;padding:16px}.logic-metrics small,.logic-metrics span{display:block;color:var(--muted)}.logic-metrics strong{display:block;font-size:1.45rem;color:var(--amber);margin:3px 0}.playbook{display:grid;grid-template-columns:1fr 1fr;gap:10px}.playbook article{display:flex;gap:14px;padding:17px;background:#091824;border-left:2px solid var(--mint)}.playbook i{color:#48677b;font:700 .9rem ui-monospace}.playbook b{font-size:1rem}.playbook p,.inference{color:var(--muted);font-size:.86rem;margin:6px 0 0}.inference{border-top:1px solid var(--line);padding-top:14px}
+    @media(max-width:760px){.logic-metrics,.playbook{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="brand"><i></i><span>HORIZON FLOW</span></div>
+      <div class="fresh" id="fresh">資料載入中</div>
+    </header>
+    <section class="hero">
+      <div><p>興櫃分點行為追蹤</p><h1>凱基台北 <b>9268</b></h1><span>核心持股與資金動作，一眼辨識新建倉、加碼與減碼。</span></div>
+      <div class="threshold"><small>20 日承諾門檻</small><strong id="threshold">—</strong><em>只用校準期資料設定</em></div>
+    </section>
+    <section class="summary" id="summary"></section>
+    <section class="panel core">
+      <div class="panel-head"><div><p>CORE POSITIONS</p><h2>主要核心股票</h2></div><span>依承諾、留存與資金規模排序</span></div>
+      <div class="filters" id="actions">
+        <button class="active" data-action="all">全部</button><button data-action="new">新建倉</button><button data-action="add">加碼</button><button data-action="trim,reduce">減碼</button><button data-action="hold">持有</button>
+      </div>
+      <div class="cards" id="core-list"></div>
+      <p class="none" id="empty" hidden>這個分類目前沒有股票。</p>
+    </section>
+    <section class="panel flows">
+      <div class="panel-head"><div><p>MULTI-PERIOD FLOW</p><h2>買賣超排行</h2></div><span id="period-label">每日</span></div>
+      <div class="filters" id="periods"><button class="active" data-period="1">每日</button><button data-period="5">5 日</button><button data-period="10">10 日</button><button data-period="20">20 日</button></div>
+      <div class="split"><div><h3>買超</h3><div id="buyers"></div></div><div><h3>賣超</h3><div id="sellers"></div></div></div>
+    </section>
+    <section class="panel logic">
+      <div class="panel-head"><div><p>BEHAVIORAL PLAYBOOK</p><h2>從歷史戰績推敲操作邏輯</h2></div><span>176 筆已結案波段</span></div>
+      <div class="logic-metrics">
+        <article><small>訊號後勝率</small><strong>46.0%</strong><span>平均報酬 +9.98%</span></article>
+        <article><small>典型持有</small><strong>133 天</strong><span>贏家中位 147 天</span></article>
+        <article><small>最佳持有帶</small><strong>91–365 天</strong><span>勝率約 53–57%</span></article>
+      </div>
+      <div class="playbook">
+        <article><i>01</i><div><b>先試單，再看資金承諾</b><p>20 日買進達 370 萬只列入雷達；達 500 萬後，勝率與中位報酬才同時轉正。1,000 萬以上視為強訊號，但樣本較少。</p></div></article>
+        <article><i>02</i><div><b>偏好高留存建倉</b><p>贏家進場時資金留存中位約 90.7%，高於輸家的 87.9%。它較重視買進後沒有快速回吐，而不是只看單日大買。</p></div></article>
+        <article><i>03</i><div><b>靠少數長波段拉開報酬</b><p>整體中位報酬為 -4.63%，但平均仍為 +9.98%，顯示這不是高勝率短打，而是容忍多次小失敗、等待少數大波段。</p></div></article>
+        <article><i>04</i><div><b>調節不等於撤退</b><p>庫存仍保有高峰 70% 以上時，短期賣超較像減碼調節；持有 91–365 天的結果明顯優於 90 天內退出。</p></div></article>
+        <article><i>05</i><div><b>出場看庫存退潮</b><p>滿足最低持有期後，庫存接近高峰的 10% 且持續賣出，才視為波段結束；不以單純價格停損推定主力離場。</p></div></article>
+      </div>
+      <p class="inference">以上是分點交易行為的統計推論，不代表所有交易由同一人操作，也不能證明未來會重複相同模式。</p>
+    </section>
+    <section class="panel logic">
+      <div class="panel-head"><div><p>BEHAVIORAL PLAYBOOK</p><h2>從歷史戰績推敲操作邏輯</h2></div><span>105 筆已結案訊號</span></div>
+      <div class="logic-metrics">
+        <article><small>訊號勝率</small><strong>42.9%</strong><span>平均報酬 +12.25%</span></article>
+        <article><small>典型持有</small><strong>148 天</strong><span>贏家中位 158 天</span></article>
+        <article><small>較佳持有帶</small><strong>181–365 天</strong><span>勝率 55.0%</span></article>
+      </div>
+      <div class="playbook">
+        <article><i>01</i><div><b>中型試單，不迷信巨額買進</b><p>20 日承諾門檻約 1,100 萬元；歷史上 1,500 萬以下訊號反而優於更大資金級距，顯示金額放大不等於勝率提高。</p></div></article>
+        <article><i>02</i><div><b>建倉留存不是唯一關鍵</b><p>贏家進場留存中位 80.8%，並未高於輸家的 82.4%。因此凱基台北不能只靠「買後沒賣」判斷，還要觀察後續加碼與持有時間。</p></div></article>
+        <article><i>03</i><div><b>低勝率、右尾報酬型</b><p>整體中位報酬 -6.18%，但平均 +12.25%；贏家中位可達 +44.84%。推測操作容許多筆失敗，靠少數長波段拉高整體成果。</p></div></article>
+        <article><i>04</i><div><b>耐心比短打重要</b><p>90 天內結束的波段平均接近損益兩平；181–365 天的勝率 55%、中位報酬 +9.87%，是歷史上較穩定的持有區間。</p></div></article>
+        <article><i>05</i><div><b>退場看庫存結構</b><p>短期賣超但庫存仍保有高峰 70% 以上，先視為調節；滿足最低持有期且庫存降到高峰約 10% 才判定完整退場。</p></div></article>
+      </div>
+      <p class="inference">這是分點行為的統計推論，不代表所有交易由同一人操作，也不能證明未來會重複相同模式。</p>
+    </section>
+    <footer><p id="method"></p><span>行為連結不代表共同實益所有權；本頁為研究工具，不構成投資建議。</span></footer>
+  </main>
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
