@@ -8,12 +8,22 @@
   <title>凱基台北 9268｜分點資金雷達</title>
   <link rel="stylesheet" href="./assets/app.css">
   <link rel="stylesheet" href="./assets/logic.css">
+  <link rel="stylesheet" href="./assets/auth.css">
   <style>
     .logic-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}.logic-metrics article{background:#091824;border:1px solid #173044;padding:16px}.logic-metrics small,.logic-metrics span{display:block;color:var(--muted)}.logic-metrics strong{display:block;font-size:1.45rem;color:var(--amber);margin:3px 0}.playbook{display:grid;grid-template-columns:1fr 1fr;gap:10px}.playbook article{display:flex;gap:14px;padding:17px;background:#091824;border-left:2px solid var(--mint)}.playbook i{color:#48677b;font:700 .9rem ui-monospace}.playbook b{font-size:1rem}.playbook p,.inference{color:var(--muted);font-size:.86rem;margin:6px 0 0}.inference{border-top:1px solid var(--line);padding-top:14px}
     @media(max-width:760px){.logic-metrics,.playbook{grid-template-columns:1fr}}
   </style>
 </head>
-<body>
+<body class="locked">
+  <section class="auth-gate" id="auth-gate" aria-labelledby="auth-title">
+    <form class="auth-card" id="auth-form">
+      <div class="auth-mark">9268</div><p>KGI TAIPEI FLOW</p>
+      <h1 id="auth-title">凱基台北分點雷達</h1>
+      <label for="access-password">觀看密碼</label>
+      <div class="auth-input"><input id="access-password" type="password" inputmode="numeric" autocomplete="current-password" required><button type="submit">進入</button></div>
+      <span id="auth-error" role="alert"></span>
+    </form>
+  </section>
   <main class="shell">
     <header>
       <div class="brand"><i></i><span>HORIZON FLOW</span></div>
@@ -71,6 +81,7 @@
     </section>
     <footer><p id="method"></p><span>行為連結不代表共同實益所有權；本頁為研究工具，不構成投資建議。</span></footer>
   </main>
+  <script src="./assets/auth.js" defer></script>
   <script src="./assets/app.js" defer></script>
 </body>
 </html>
