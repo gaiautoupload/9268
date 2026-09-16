@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./assets/logic.css">
   <link rel="stylesheet" href="./assets/auth.css">
   <link rel="stylesheet" href="./assets/impact.css">
+  <link rel="stylesheet" href="./assets/shortcut.css">
   <style>
     .logic-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}.logic-metrics article{background:#091824;border:1px solid #173044;padding:16px}.logic-metrics small,.logic-metrics span{display:block;color:var(--muted)}.logic-metrics strong{display:block;font-size:1.45rem;color:var(--amber);margin:3px 0}.playbook{display:grid;grid-template-columns:1fr 1fr;gap:10px}.playbook article{display:flex;gap:14px;padding:17px;background:#091824;border-left:2px solid var(--mint)}.playbook i{color:#48677b;font:700 .9rem ui-monospace}.playbook b{font-size:1rem}.playbook p,.inference{color:var(--muted);font-size:.86rem;margin:6px 0 0}.inference{border-top:1px solid var(--line);padding-top:14px}
     @media(max-width:760px){.logic-metrics,.playbook{grid-template-columns:1fr}}
@@ -28,7 +29,7 @@
   <main class="shell">
     <header>
       <div class="brand"><i></i><span>HORIZON FLOW</span></div>
-      <div class="fresh" id="fresh">資料載入中</div>
+      <div class="header-actions"><button class="today-jump" id="today-jump" type="button">今日買賣 ↓</button><div class="fresh" id="fresh">資料載入中</div></div>
     </header>
     <section class="hero">
       <div><p>興櫃分點行為追蹤</p><h1>凱基台北 <b>9268</b></h1><span>核心持股與資金動作，一眼辨識新建倉、加碼與減碼。</span></div>
@@ -43,7 +44,7 @@
       <div class="cards" id="core-list"></div>
       <p class="none" id="empty" hidden>這個分類目前沒有股票。</p>
     </section>
-    <section class="panel flows">
+    <section class="panel flows" id="today-flow">
       <div class="panel-head"><div><p>MULTI-PERIOD FLOW</p><h2>買賣超排行</h2></div><span id="period-label">每日</span></div>
       <div class="filters" id="periods"><button class="active" data-period="1">每日</button><button data-period="5">5 日</button><button data-period="10">10 日</button><button data-period="20">20 日</button></div>
       <div class="split"><div><h3>買超</h3><div id="buyers"></div></div><div><h3>賣超</h3><div id="sellers"></div></div></div>
@@ -70,5 +71,6 @@
   <script src="./assets/app.js" defer></script>
   <script src="./assets/returns.js" defer></script>
   <script src="./assets/impact.js" defer></script>
+  <script src="./assets/shortcut.js" defer></script>
 </body>
 </html>
