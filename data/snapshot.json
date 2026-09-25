@@ -13,8 +13,8 @@
     "market_value": 3650020142.6800003,
     "rolling_20d_net_invested": 406273189.49000007,
     "inventory_net_cost": 2816788697.5565414,
-    "inventory_profit": 833231445.1234584,
-    "inventory_return": 0.29580899903718566
+    "inventory_profit": 833231445.1234585,
+    "inventory_return": 0.2958089990371857
   },
   "behavior_profile": {
     "closed_signals": 109,
@@ -2136,8 +2136,8 @@
       "rolling_net": 18679227.700000003,
       "capital_retention": 0.4900472059,
       "commitment_ratio": 3.4652000636,
-      "inventory_net_cost": 23313979.14547752,
-      "inventory_profit": -1328059.9454775155,
+      "inventory_net_cost": 23313979.145477526,
+      "inventory_profit": -1328059.9454775304,
       "inventory_return": -0.0569641045,
       "position_start_date": "2021-02-24",
       "major_events": [
@@ -2171,7 +2171,7 @@
         "note": "買後上漲或賣後下跌視為方向一致；只描述價格反應，不證明控制關係。"
       },
       "net_amount_1": 1181500.0,
-      "net_amount_5": 3638054.799999999,
+      "net_amount_5": 3638054.8,
       "net_amount_10": 9394974.5,
       "net_amount_20": 18679227.700000003,
       "net_vol_1": 19000.0,
@@ -2295,7 +2295,7 @@
       },
       "net_amount_1": -2042204.2999999998,
       "net_amount_5": 8198295.000000002,
-      "net_amount_10": 15761825.400000002,
+      "net_amount_10": 15761825.4,
       "net_amount_20": 21443622.499999996,
       "net_vol_1": -28489.0,
       "net_vol_5": 118573.0,
@@ -3807,10 +3807,10 @@
         "stock_id": "7754",
         "stock_name": "安基生技",
         "buy_amount": 27408759.3,
-        "sell_amount": 11646933.899999999,
+        "sell_amount": 11646933.9,
         "buy_vol": 404693.0,
         "sell_vol": 168248.0,
-        "net_amount": 15761825.400000002,
+        "net_amount": 15761825.4,
         "net_vol": 236445.0
       },
       {
