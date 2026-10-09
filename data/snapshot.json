@@ -13,8 +13,8 @@
     "market_value": 3434971218.83,
     "rolling_20d_net_invested": -646966680.45,
     "inventory_net_cost": 2548067273.7532487,
-    "inventory_profit": 886903945.076751,
-    "inventory_return": 0.3480692814559642
+    "inventory_profit": 886903945.0767512,
+    "inventory_return": 0.34806928145596433
   },
   "behavior_profile": {
     "closed_signals": 110,
@@ -2865,8 +2865,8 @@
       "rolling_net": 14043801.399999999,
       "capital_retention": 0.4285154716,
       "commitment_ratio": 2.9793771818,
-      "inventory_net_cost": 24069625.838297524,
-      "inventory_profit": -766905.8382975161,
+      "inventory_net_cost": 24069625.83829753,
+      "inventory_profit": -766905.838297531,
       "inventory_return": -0.0318619759,
       "position_start_date": "2021-02-24",
       "major_events": [
