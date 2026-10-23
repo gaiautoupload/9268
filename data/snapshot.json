@@ -1437,7 +1437,7 @@
         "average_directional_return_5d": 0.0288831983,
         "note": "買後上漲或賣後下跌視為方向一致；只描述價格反應，不證明控制關係。"
       },
-      "net_amount_1": 1388456.8000000003,
+      "net_amount_1": 1388456.7999999998,
       "net_amount_5": -14300772.399999999,
       "net_amount_10": -24359969.299999997,
       "net_amount_20": -2770074.349999994,
@@ -2480,8 +2480,8 @@
       "inventory": 70047.0,
       "inventory_retention": 0.0744799735,
       "market_value": 1155775.5,
-      "rolling_buy": 85013826.65,
-      "rolling_net": -18217233.599999994,
+      "rolling_buy": 85013826.64999999,
+      "rolling_net": -18217233.60000001,
       "capital_retention": 0.0,
       "commitment_ratio": 7.7285296955,
       "inventory_net_cost": 3361548.6104137003,
@@ -2844,8 +2844,8 @@
       "rolling_net": 4214000.3999999985,
       "capital_retention": 0.443182868,
       "commitment_ratio": 0.8644082909,
-      "inventory_net_cost": 23527706.993917517,
-      "inventory_profit": -2660410.193917513,
+      "inventory_net_cost": 23527706.993917525,
+      "inventory_profit": -2660410.193917528,
       "inventory_return": -0.1130756259,
       "position_start_date": "2021-02-24",
       "major_events": [
@@ -2903,11 +2903,11 @@
       {
         "stock_id": "3585",
         "stock_name": "聯致",
-        "buy_amount": 3865626.8000000003,
+        "buy_amount": 3865626.8,
         "sell_amount": 2477170.0,
         "buy_vol": 58414.0,
         "sell_vol": 37900.0,
-        "net_amount": 1388456.8000000003,
+        "net_amount": 1388456.7999999998,
         "net_vol": 20514.0
       },
       {
@@ -3236,10 +3236,10 @@
         "stock_id": "6786",
         "stock_name": "芯測",
         "buy_amount": 7950924.9,
-        "sell_amount": 4725719.6,
+        "sell_amount": 4725719.600000001,
         "buy_vol": 126334.0,
         "sell_vol": 68364.0,
-        "net_amount": 3225205.3000000007,
+        "net_amount": 3225205.3,
         "net_vol": 57970.0
       },
       {
@@ -3567,11 +3567,11 @@
       {
         "stock_id": "2071",
         "stock_name": "震南鐵",
-        "buy_amount": 4180521.6,
+        "buy_amount": 4180521.5999999996,
         "sell_amount": 675739.7999999999,
         "buy_vol": 208797.0,
         "sell_vol": 34973.0,
-        "net_amount": 3504781.8000000003,
+        "net_amount": 3504781.8,
         "net_vol": 173824.0
       },
       {
@@ -3637,11 +3637,11 @@
       {
         "stock_id": "7719",
         "stock_name": "碳基",
-        "buy_amount": 1673557.5999999999,
+        "buy_amount": 1673557.6,
         "sell_amount": 175600.0,
         "buy_vol": 38611.0,
         "sell_vol": 4000.0,
-        "net_amount": 1497957.5999999999,
+        "net_amount": 1497957.6,
         "net_vol": 34611.0
       },
       {
@@ -3939,11 +3939,11 @@
       {
         "stock_id": "2071",
         "stock_name": "震南鐵",
-        "buy_amount": 4182131.6,
+        "buy_amount": 4182131.5999999996,
         "sell_amount": 1630036.5,
         "buy_vol": 208847.0,
         "sell_vol": 66008.0,
-        "net_amount": 2552095.1,
+        "net_amount": 2552095.0999999996,
         "net_vol": 142839.0
       },
       {
